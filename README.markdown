@@ -2,4 +2,6 @@ As I embark on this journey into the world of [Ruby](http://ruby-lang.org), I ha
 
 In the process, I hope to develop the habit learning through tests as there are many other gems, plugins & utilities that I will need to learn to become a good ruby programmer. The pleasant side effect of this would be to track my progress through my commits & keep myself honest. I hope to chronicle interesting things that I discover along the way on my currently inactive [blog](http://tundal45.wordpress.com).
 
+While there is a [great resource](http://github.com/edgecase/ruby_koans) that is already out there thanks to the effort of good folks from [EdgeCase](http://edgecase.com/home), I feel that writing my own tests will keep me focussed on task & get me in the habit of writing the tests.
+
 Wish me luck!
