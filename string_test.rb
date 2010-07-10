@@ -15,6 +15,12 @@ class StringTest < Test::Unit::TestCase
     assert_equal(19, "Where can I find Ruby".index('b'))
   end
   
+  def test_conversion
+    assert_equal(100, "100.0".to_i)
+    assert_equal(101.09, "101.09".to_f)
+    assert_equal(["a,b,c"], "a,b,c".to_a)
+  end
+  
   def test_plus_equals_creates_new_object
     original_string = "Hello, "
     hi = original_string
