@@ -1,6 +1,10 @@
 require 'test/unit'
 
 class ArrayTest < Test::Unit::TestCase
+  
+  def test_truth
+    assert_equal(true, if [] then true end)
+  end
 
   def test_plus_equals_creates_new_object
     original_string = ["Hello"]

@@ -2,6 +2,10 @@ require 'test/unit'
 
 class StringTest < Test::Unit::TestCase
 
+  def test_truth
+    assert_equal(true, if "abc" then true end)
+  end
+  
   def test_length
     s = "Learning Ruby is fun"
     assert_equal(20, s.length)
@@ -19,6 +23,10 @@ class StringTest < Test::Unit::TestCase
     assert_equal(100, "100.0".to_i)
     assert_equal(101.09, "101.09".to_f)
     assert_equal(["a,b,c"], "a,b,c".to_a)
+  end
+  
+  def test_interpolation
+    assert_equal("2 + 5 = 7", "2 + 5 = #{2 + 5}")
   end
   
   def test_plus_equals_creates_new_object

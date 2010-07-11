@@ -2,6 +2,10 @@ require 'test/unit'
 
 class NumberTest < Test::Unit::TestCase
   
+  def test_truth
+    assert_equal(true, if 5 then true end)
+  end
+  
   def test_integer_operation_produces_integer_even_division
     assert_equal(2, 5/2)
   end
