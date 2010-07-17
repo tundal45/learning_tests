@@ -25,9 +25,13 @@ class StringTest < Test::Unit::TestCase
     assert_equal(["a,b,c"], "a,b,c".to_a)
   end
   
+  def test_concatenation
+    assert_equal("John " + "Doe", "John Doe")
+  end
+  
   def test_interpolation
     assert_equal("2 + 5 = 7", "2 + 5 = #{2 + 5}")
-  end
+  end  
   
   def test_plus_equals_creates_new_object
     original_string = "Hello, "
