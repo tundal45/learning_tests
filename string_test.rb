@@ -31,6 +31,7 @@ class StringTest < Test::Unit::TestCase
   
   def test_interpolation
     assert_equal("2 + 5 = 7", "2 + 5 = #{2 + 5}")
+    assert_not_equal('2 + 5 = #{2 + 5}', "2 + 5 = #{2 + 5}")
   end  
   
   def test_plus_equals_creates_new_object
